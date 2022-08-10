@@ -10,6 +10,7 @@ class App:
         self.janela.title("Marcador")
         self.janela.minsize(width=380, height=150)
         self.janela.maxsize(width=380, height=150)
+        self.janela.resizable(0,0)
 
 
         self.texto= tkinter.Label(self.janela, text="20",font="Arial 50 bold", pady=10)

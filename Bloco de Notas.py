@@ -34,6 +34,7 @@ janela = tkinter.Tk()
 janela.title("Notepad")
 janela.minsize(width=1280, height=720)
 janela.maxsize(width=1280, height=720)
+janela.resizable(0,0)
 
 
 barra = tkinter.Frame(janela, height=30)
