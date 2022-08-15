@@ -1,0 +1,20 @@
+from tkinter import  *
+
+class App:
+    def __init__(self):
+        self.janela = Tk()
+        self.janela.title("App de desenho")
+        self.janela.minsize(width=1200, height=720)
+        self.janela.maxsize(width=1200, height=720)
+        self.janela.resizable(0,0)
+
+        self.framee = Frame(self.janela, background="black", height=50)
+        self.framee.pack(fill="x")
+
+        self.area_desenho = Canvas(self.janela, background="grey", height=720)
+        self.area_desenho.pack(fill="both")
+
+
+        self.janela.mainloop()
+        
+App()
