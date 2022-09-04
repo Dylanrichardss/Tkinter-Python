@@ -30,6 +30,7 @@ class App:
 
         self.janela.mainloop()
 
+
     def pesquisar(self, event):
         try:
             requisicao = requests.get("http://www.omdbapi.com/?t=" + self.texto.get() + "&apikey=dbb11bd6")
