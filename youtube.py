@@ -63,7 +63,7 @@ class App:
         
     def download(self, link):
         try:
-            os.system("youtube-dl " + str(link)) # Faz download do video.
+            os.system("youtube-dl --ignore-errors --verbose " + str(link)) # Faz download do video.
             self.mensagem_sucesso()
         except:
             self.mensagem_erro()
